@@ -2,8 +2,6 @@
 
 Convierte una solicitd en un **objeto** independiente, el cual, contiene toda la información sobre la solicitud.
 
-permite hacer undo y redo
-
 ## PROBLEMA
 
 Desarrollaste una aplicación con una clase **boton** la cual, puede ser usada para todos los botones.
@@ -12,7 +10,7 @@ Terminarás creando cientos de **subclases** una para cada botón.
 
 Corres el riesgo de descomponer las sublcases cuando editas la clase **boton**.
 
-podrías **copiar** el texto desde un botón, o con comandos del teclado.
+podrías **copiar** el texto desde un botón, o con shortcuts.
 
 Tendrías que implementar la operación **copiar** en diferentes subclases.
 

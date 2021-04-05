@@ -1,3 +1,7 @@
+"""
+RECEIVER
+"""
+
 class Car:
 
     def start(self):
@@ -17,9 +21,9 @@ class ICommand:
     def execute(self):
         pass
 
-# 
-# 
-# 
+"""
+COMMAND
+"""
 
 class CommandStart(ICommand):
 
@@ -28,32 +32,24 @@ class CommandStart(ICommand):
     def __init__(self, car):
         self.car = car
 
-    # 
-    # 
-    # 
-
     def execute(self):
         self.car.start()
 
-# 
-# 
-# 
+"""
+COMMAND
+"""
 
 class CommandStop(ICommand):
 
     def __init__(self, car):
         self.car = car
 
-    # 
-    # 
-    # 
-
     def execute(self):
         self.car.stop() 
 
-# 
-# Is the invoker
-# 
+"""
+INVOKER
+""" 
 
 class RemoteControl:
 
@@ -67,6 +63,10 @@ class RemoteControl:
 
         self.commands[index].execute()
 
+"""
+CLIENT
+
+"""
 
 car = Car()
 remoteControl = RemoteControl(car)
