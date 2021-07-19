@@ -1,0 +1,12 @@
+{
+  "name": "composite",
+  "version": "1.0.0",
+  "description": "Composite pattern design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc index.ts && node index.js"
+  },
+  "author": "Cristian Guzmán",
+  "license": "ISC"
+}
